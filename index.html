@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Text analyzer</title>
+  </head>
+  <body>
+    <header class="header">
+      <video width="50%" height="100%" autoplay muted class="header--video">
+        <source src="images/type_text.mp4" type="video/mp4" />
+        <source src="images/type_text.ogg" type="video/ogg" />
+      </video>
+      <div class="btn--1">
+        <button class="start--typing" href="#section_1">START TYPING</button>
+      </div>
+    </header>
+    <section>
+      <div class="section--1" id="section_1">
+        <div class="type--text">
+          <h1>TYPE HERE</h1>
+        </div>
+        <div class="text--box">
+          <textarea
+            class="text_box"
+            name="paragraph_text"
+            cols="50"
+            rows="10"
+            placeholder="Type or paste your text here..."
+          ></textarea>
+        </div>
+        <div class="btn--1">
+          <button class="start--typing analyze--text">ANALYZE YOUR TEXT</button>
+        </div>
+      </div>
+    </section>
+    <section class="section--2">
+      <div class="type--text">
+        <h1>TEXT ANALYSIS</h1>
+      </div>
+      <table class="result--table">
+        <tr>
+          <td>Character count:</td>
+          <td id="char"></td>
+        </tr>
+        <tr>
+          <td>Word count:</td>
+          <td id="word"></td>
+        </tr>
+        <tr>
+          <td>Sentences:</td>
+          <td id="sentence"></td>
+        </tr>
+        <tr>
+          <td>Spaces:</td>
+          <td id="space"></td>
+        </tr>
+        <tr>
+          <td>Punctuations:</td>
+          <td id="punctuation"></td>
+        </tr>
+        <tr>
+          <td>Vowels:</td>
+          <td id="vowel"></td>
+        </tr>
+        <tr>
+          <td>Consonants:</td>
+          <td id="consonant"></td>
+        </tr>
+      </table>
+      <div class="btn--1">
+        <button class="start--typing reset--btn">RESET</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://twitter.com/jonasschmedtman"
+          >Samruddhi Selukar</a
+        >. Spectra Designs . 2022
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
