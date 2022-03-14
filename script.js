@@ -96,7 +96,7 @@ analyzeBtn.addEventListener("click", function (e) {
 
 reset.addEventListener("click", function (e) {
   e.preventDefault();
-  uiValues.forEach((value) => (value.innerHTML = 0));
   section1.scrollIntoView({ behavior: "smooth" });
+  uiValues.forEach((value) => (value.innerHTML = 0));
   textArea.value = "";
 });
